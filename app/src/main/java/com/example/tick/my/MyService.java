@@ -95,7 +95,7 @@ public class MyService extends Service {
     }
 
     private void setNotiType(int iconId, String text) {
-        Intent notifyIntent=new Intent(this,MyService.class);
+        Intent notifyIntent=new Intent(this,MainActivity.class);
         notifyIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         PendingIntent appIntent=PendingIntent.getActivity(MyService.this,0,notifyIntent,0);
 
